@@ -16,7 +16,7 @@ url = 'http://personalproductivityapp.depaulmysore.in/Modules/Prediction/predict
 def home():
     return redirect(url)    
 
-@app.route('/predict',methods=['POST'])
+@app.route('/Modules/Prediction/predict.php',methods=['POST'])
 def predict():
     '''
     For rendering results on HTML GUI
