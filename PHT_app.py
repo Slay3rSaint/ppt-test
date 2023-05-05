@@ -11,7 +11,7 @@ app = Flask(__name__)
 lr_model = pickle.load(open('final_model.pkl', 'rb'))
 X = pickle.load(open('train_data.pkl', 'rb'))
 preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
-url = 'http://personalproductivityapp.depaulmysore.in/Modules/Prediction/predict.php'
+url = 'http://personalproductivitytracker.jeevanjyothihall.in/Modules/Prediction/predict.php'
 @app.route('/')
 def home():
     return redirect(url)    
